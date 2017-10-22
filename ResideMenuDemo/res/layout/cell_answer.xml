@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/txtRight"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtAns1"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:textColor="@color/blue"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/txtAns2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:textColor="@color/red"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRight"
+            android:layout_toLeftOf="@+id/icnDetail"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="You have answered this questions!"
+            android:textColor="@android:color/black"
+            android:textSize="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/icnDetail"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icn_detail"
+            android:layout_width="10dp"
+            android:layout_height="20dp"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

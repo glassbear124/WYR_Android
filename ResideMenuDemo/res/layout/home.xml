@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@color/navColor"
+            android:id="@+id/layout_top">
+
+            <ImageView
+                android:id="@+id/btnLeft"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icn_back">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:text="Compose a Question"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgTitleWYRBanner"
+                android:src="@drawable/wyr_banner"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:id="@+id/lnSegmenter"
+                android:background="@drawable/round_line"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_width="220dp"
+                android:layout_height="36dp">
+
+                <TextView
+                    android:id="@+id/btn1"
+                    android:text="Hottest"
+                    android:background="@drawable/round_left_title"
+                    style="@style/segment_item"/>
+
+                <TextView
+                    android:id="@+id/btn2"
+                    android:background="@drawable/round_title_center"
+                    android:text="Trending"
+                    style="@style/segment_item"/>
+
+                <TextView
+                    android:id="@+id/btn3"
+                    android:background="@drawable/round_right_title"
+                    android:text="Most Likes"
+                    style="@style/segment_item"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/btnAlert"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_alert" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lnGroupTxt"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Loading..."
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="20dp">
+
+                <ImageView
+                    android:background="@drawable/emoji_heart"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtLikeCnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgWYRBanner"
+            android:src="@drawable/wyr_banner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/topBar"
+        android:layout_above="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/answerOneView"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <ProgressBar
+                    android:id="@+id/progAnswerOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:progressDrawable="@drawable/prog_blue"
+                    style="?android:attr/progressBarStyleHorizontal" />
+
+                <LinearLayout
+                    android:id="@+id/lnQuiz"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtAnswerOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:minLines="1"
+                        android:maxLines="5"
+                        android:text="Loading..."
+                        style="@style/main_text" />
+
+                    <TextView
+                        android:id="@+id/txtAnswerOnePercent"
+                        android:visibility="gone"
+                        android:text="67%"
+                        android:textSize="40dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/answerTwoView"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <ProgressBar
+                    android:id="@+id/progAnswerTwo"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:progressDrawable="@drawable/prog_red"
+                    style="?android:attr/progressBarStyleHorizontal" />
+
+                <LinearLayout
+                    android:id="@+id/lnAns"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtAnswerTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/main_text"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:minLines="1"
+                        android:maxLines="5"
+                        android:text="Loading..." />
+
+                    <TextView
+                        android:id="@+id/txtAnswerTwoPercent"
+                        android:visibility="gone"
+                        android:text="37%"
+                        android:textSize="40dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtOR"
+            android:background="@drawable/black_circle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/admob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rnGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <View
+                android:id="@+id/btnHeart"
+                android:layout_width="50dp"
+                android:background="@drawable/btn_like_selector"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/btnHeart"
+                android:layout_toLeftOf="@+id/btnComment"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtAnswerCnt"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="20dp"/>
+
+                <ToggleButton
+                    android:id="@+id/btnSkip"
+                    android:textOff="Skip"
+                    android:textOn="Next"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/btnComment"
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:background="@drawable/btn_comment"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/btnBottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Share with Others"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/admob"
+        android:background="@drawable/admob"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+
+</RelativeLayout>
+

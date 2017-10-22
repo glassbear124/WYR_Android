@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arrAnswerSound">
+        <item>@raw/ans1</item>
+        <item>@raw/ans2</item>
+        <item>@raw/ans3</item>
+        <item>@raw/ans4</item>
+        <item>@raw/ans5</item>
+        <item>@raw/ans6</item>
+        <item>@raw/ans7</item>
+    </array>
+
+</resources>

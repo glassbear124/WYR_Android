@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#edecf2">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/navColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Cancel"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnCancel" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:layout_width="210dp"
+            android:layout_height="36dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Save"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnSave" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rnEnglish"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="English"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/vChkEn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icn_check"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rnSpanish"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="Spanish"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/vChkSp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icn_check"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+    </LinearLayout>
+
+
+</LinearLayout>

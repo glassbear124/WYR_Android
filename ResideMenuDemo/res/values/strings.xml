@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Would You?</string>
+    <string name="red_heart"> X 196</string>
+    <string name="test">\u1f202</string>
+
+    <string name="mark">Mark as "Dirty"</string>
+
+    <string-array name="profile_common_items">
+        <item>Total answered questions</item>
+        <item>Total composed questions</item>
+        <item>Total promotions</item>
+        <item>Total shares</item>
+    </string-array>
+
+    <string-array name="my_profile_detail_items">
+        <item>My Composed Questions</item>
+        <item>My Likes</item>
+        <item>My Answers</item>
+    </string-array>
+
+    <string-array name="profile_detail_items">
+        <item>Composed Questions</item>
+        <item>Questions Liked</item>
+    </string-array>
+
+    <string-array name="setting_items">
+        <item>Laguage</item>
+        <item>Move to next question automatically</item>
+        <item>Sound Effects</item>
+        <item>Children Filter</item>
+        <item>Say question out loud automatically</item>
+        <item>How to login to Game Center</item>
+        <item>Special Thanks</item>
+        <item>Contact Us</item>
+    </string-array>
+
+    <string-array name="users_items">
+        <item>Thesearch92</item>
+        <item>SearchYourMom</item>
+        <item>Searching4Bliss</item>
+        <item>Jordan-Search</item>
+        <item>searchgod</item>
+        <item>searchi123</item>
+        <item>SearchAgain004</item>
+        <item>CSearching</item>
+        <item>research11</item>
+    </string-array>
+
+    <color name="gray_btn_bg_color">#e74c3c</color>
+    <string name="txt_more">Load more comments...</string>
+
+</resources>

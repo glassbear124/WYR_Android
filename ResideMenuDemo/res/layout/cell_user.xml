@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/white" >
+
+    <com.special.wyr.utils.CircleImageView
+        android:id="@+id/imgThumb"
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgThumb"
+        android:layout_toLeftOf="@+id/txtDate"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="TheSearch90"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:id="@+id/txtDate"
+        android:layout_marginRight="10dp"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:background="@drawable/icn_detail"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</RelativeLayout>

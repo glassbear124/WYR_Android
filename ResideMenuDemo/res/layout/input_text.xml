@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainSrc"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@color/navColor">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_menu"
+                android:id="@+id/title_bar_left_menu" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:text="Compose a Question"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lnBg"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCounter"
+                android:visibility="gone"
+                android:text="Type First Option Here... 65 Characters Remaining"
+                android:textSize="10dp"
+                android:textColor="@color/lightGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:hint="Type First Option Here..."
+                android:inputType="textImeMultiLine"
+                android:maxLength="65"
+                android:textColorHint="@color/gray"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
+

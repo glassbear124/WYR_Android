@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="navColor">#9d88d0</color>
+    <color name="yellow">#fec544</color>
+    <color name="blue">#13a2ff</color>
+    <color name="green">#91cd55</color>
+    <color name="red">#fc4a57</color>
+    <color name="text_color">#0A60FF</color>
+    <color name="gray">#9a9a9a</color>
+    <color name="lightGray">#aaaaaa</color>
+
+    <!-- segment -->
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">#e0e0e0</color>
+
+</resources>

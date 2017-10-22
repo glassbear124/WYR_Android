@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white">
+
+
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/navColor"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true">
+
+            <View
+                android:background="@drawable/icn_back"
+                android:layout_width="18dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="14dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Comments"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:id="@+id/btnRefresh"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_refresh" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_below="@+id/topBar"
+        android:layout_above="@+id/lnInput"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/lnInput"
+        android:layout_above="@+id/admob"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:padding="5dp"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/editComment"
+            android:background="@drawable/round_corner"
+            android:hint="Type comment here"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:inputType="text"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtSend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Send"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_corner_green"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:id="@+id/admob"
+        android:background="@drawable/admob"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>
+
